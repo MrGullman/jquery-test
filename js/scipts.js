@@ -12,9 +12,24 @@ $(document).ready(function(){
   $("#left-content li:nth-child(3)").html("Eller varför inte här?")
   
   var orginalState = $("#header-text").clone().html();
-
+  var item1 = $("#left-content li:nth-child(1)").clone().html();
   
-  $("li").on('mousedown', function(){
+  // Footer hide or show
+  
+  console.log($("#left-content li").get(0).textContent)
+  
+  $("#right-content li:nth-child(1)").html("Visa Footrn!");
+  $("#right-content li:nth-child(2)").html("Göm Footrn!");
+  
+  $("#right-content li:nth-child(1)").on('click', function(){
+    $("#footer-wrapper").css("transform", "translateY(0)")
+  });
+  
+  $("#right-content li:nth-child(2)").on('click', function(){
+    $("#footer-wrapper").css("transform", "translateY(100%)");
+  });
+  
+  $("#left-content").children().on('mousedown', function(){
     $("#header-text").html("Detta Funkar Ju!");
   });
   

@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 #footer-wrapper {
@@ -62,4 +63,10 @@ i {
   transition-duration: 1s;
   transform: translateY(-130%);
   z-index: -1;
+}
+
+#footer-wrapper {
+  transition-property: transform;
+  transform: translateY(100%);
+  transition-duration: 1s;  
 }
