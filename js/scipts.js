@@ -65,5 +65,9 @@ $(document).ready(function(){
     $("#inner-content").css("transform","translateY(-130%)");
   });
   
+  $("#right-content li:nth-child(3)").html("Stäng Pil Knapp!");
+
+  darkTheme.background;
+
   
 });
